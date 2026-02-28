@@ -1,0 +1,385 @@
+[gd_scene load_steps=57 format=3 uid="uid://btpwvjt5o676g"]
+
+[ext_resource type="Texture2D" uid="uid://dpdx1v1xj1r7" path="res://AsepriteAssets/Cabinet desk thing.aseprite" id="1_ig7tw"]
+[ext_resource type="Script" uid="uid://ba0ed7sk07p1m" path="res://Camera2d.cs" id="1_kek77"]
+[ext_resource type="Texture2D" uid="uid://cuuagsb5qfn58" path="res://AsepriteAssets/Lever Up.aseprite" id="2_1bvp3"]
+[ext_resource type="Texture2D" uid="uid://r0a0cquiymos" path="res://AsepriteAssets/Pressure Pump 0.aseprite" id="2_dyvha"]
+[ext_resource type="Texture2D" uid="uid://bbyr27wgtbd66" path="res://AsepriteAssets/Lever Middle.aseprite" id="3_lquwl"]
+[ext_resource type="Texture2D" uid="uid://brmp65afwpa6e" path="res://AsepriteAssets/Pressure Guage.aseprite" id="3_xc54d"]
+[ext_resource type="Texture2D" uid="uid://c08n3xi4icjdn" path="res://AsepriteAssets/Lever Down.aseprite" id="4_7mycd"]
+[ext_resource type="Texture2D" uid="uid://bgxkvkph1h03n" path="res://AsepriteAssets/Pressure Gauge Needle.aseprite" id="4_w250u"]
+[ext_resource type="Texture2D" uid="uid://dwib1vbbo782p" path="res://AsepriteAssets/Wallpaper.aseprite" id="5_272bh"]
+[ext_resource type="Texture2D" uid="uid://br2rmm2soegr" path="res://AsepriteAssets/Coolant Jug.aseprite" id="5_dyvha"]
+[ext_resource type="Texture2D" uid="uid://blm34t60jo876" path="res://AsepriteAssets/Cabinet Corner.aseprite" id="6_5vw27"]
+[ext_resource type="Texture2D" uid="uid://byu61i4ixqvt0" path="res://AsepriteAssets/Clock No Hands.aseprite" id="6_pbwgg"]
+[ext_resource type="Texture2D" uid="uid://t2nm6u4oskar" path="res://AsepriteAssets/Floor.aseprite" id="7_kek77"]
+[ext_resource type="Texture2D" uid="uid://chjox4o0w515e" path="res://AsepriteAssets/Clock Hand.aseprite" id="7_ndmee"]
+[ext_resource type="Texture2D" uid="uid://cknn0hlltcay" path="res://AsepriteAssets/TV Fuel Rods In.aseprite" id="9_5he1h"]
+[ext_resource type="Texture2D" uid="uid://d2eijtikbvukq" path="res://AsepriteAssets/Play Button Unclicked.aseprite" id="10_efxa6"]
+[ext_resource type="Texture2D" uid="uid://4v3j13h2arll" path="res://AsepriteAssets/TV Fuel Temp.aseprite" id="10_xwkxq"]
+[ext_resource type="Texture2D" uid="uid://bmdqn6mwmiiew" path="res://AsepriteAssets/Play Button Clicked.aseprite" id="11_dg77c"]
+[ext_resource type="Texture2D" uid="uid://c2p0bgrofwesu" path="res://AsepriteAssets/Red Button Unpressed.aseprite" id="12_lvtmh"]
+[ext_resource type="Texture2D" uid="uid://x56hdoweousq" path="res://AsepriteAssets/Red Button Pressed.aseprite" id="13_yyih5"]
+[ext_resource type="Texture2D" uid="uid://b8rjvplagji3a" path="res://AsepriteAssets/Red Button Unpressed Ver. 2.aseprite" id="14_qjyg3"]
+[ext_resource type="Texture2D" uid="uid://83oukovm7uff" path="res://AsepriteAssets/Red Button Pressed Ver. 2.aseprite" id="15_elkpi"]
+[ext_resource type="Script" uid="uid://bo2s1o608ytfh" path="res://FuelRodPositioning.cs" id="16_ds8mp"]
+[ext_resource type="Texture2D" uid="uid://cc2tw8w1deodr" path="res://AsepriteAssets/Thermometer 1K.aseprite" id="18_wdm1y"]
+[ext_resource type="Texture2D" uid="uid://bvogotgma6s53" path="res://AsepriteAssets/Thermometer 1.1K Revised.aseprite" id="19_hxy8k"]
+[ext_resource type="Texture2D" uid="uid://eo2v6a3xb7ug" path="res://AsepriteAssets/Thermometer 1.2K.aseprite" id="20_2t1a5"]
+[ext_resource type="Texture2D" uid="uid://cx76bywp2n0a" path="res://AsepriteAssets/Thermometer 1.3K.aseprite" id="21_8576b"]
+[ext_resource type="Texture2D" uid="uid://d30ivry25vbtj" path="res://AsepriteAssets/Thermometer 1.4K.aseprite" id="22_68r7h"]
+[ext_resource type="Texture2D" uid="uid://b66vhja28prcq" path="res://AsepriteAssets/Thermometer 1.5K.aseprite" id="23_7vltt"]
+[ext_resource type="Script" uid="uid://b0qcd3a2k0js0" path="res://FuelRodButton.cs" id="23_nyc7o"]
+[ext_resource type="Texture2D" uid="uid://gbl4cda3t5oq" path="res://AsepriteAssets/Thermometer 1.6K.aseprite" id="24_fj2yu"]
+[ext_resource type="Texture2D" uid="uid://cpi87f25srek6" path="res://AsepriteAssets/Thermometer 1.7K.aseprite" id="25_iueff"]
+[ext_resource type="Texture2D" uid="uid://c7fx0r4jpk0c7" path="res://AsepriteAssets/Thermometer 1.8K.aseprite" id="26_n7324"]
+[ext_resource type="Texture2D" uid="uid://cdeamngjgjxom" path="res://AsepriteAssets/Thermometer 1.9K.aseprite" id="27_o6tbt"]
+[ext_resource type="Texture2D" uid="uid://dbb37qeqfahex" path="res://AsepriteAssets/Thermometer 2K.aseprite" id="28_v5dxo"]
+[ext_resource type="Texture2D" uid="uid://cfww6kgnmgfsx" path="res://AsepriteAssets/Thermometer 2.1K.aseprite" id="29_dyvha"]
+[ext_resource type="Texture2D" uid="uid://bjikpldlc065t" path="res://AsepriteAssets/Thermometer 2.2K.aseprite" id="30_xc54d"]
+[ext_resource type="Texture2D" uid="uid://c8dl0gau0kooq" path="res://AsepriteAssets/Thermometer 2.3K.aseprite" id="31_w250u"]
+[ext_resource type="Texture2D" uid="uid://chhy4ombedf5t" path="res://AsepriteAssets/Thermometer 2.4K.aseprite" id="32_3h3yf"]
+[ext_resource type="Texture2D" uid="uid://dp8utr2aih66e" path="res://AsepriteAssets/Thermometer 2.5K Warning.aseprite" id="33_nyc7o"]
+[ext_resource type="Texture2D" uid="uid://bsnt84v3x3x6e" path="res://AsepriteAssets/Thermometer 2.6K Warning.aseprite" id="34_ds8mp"]
+[ext_resource type="Texture2D" uid="uid://cx4ysh41sdts4" path="res://AsepriteAssets/Thermometer 2.7K Warning.aseprite" id="35_pbwgg"]
+[ext_resource type="Texture2D" uid="uid://0u37waa4p8ge" path="res://AsepriteAssets/Thermometer 2.8K.aseprite" id="36_ndmee"]
+[ext_resource type="Texture2D" uid="uid://vuoyb3vsdmce" path="res://AsepriteAssets/Thermometer 2.6K.aseprite" id="37_xwkxq"]
+[ext_resource type="Texture2D" uid="uid://by0rxcvkveuim" path="res://AsepriteAssets/Pressure Pump 1.aseprite" id="41_3h3yf"]
+[ext_resource type="Texture2D" uid="uid://vfacwxlhaci6" path="res://AsepriteAssets/Pressure Pump 2.aseprite" id="42_nyc7o"]
+[ext_resource type="Texture2D" uid="uid://cov8f08w3n0tb" path="res://AsepriteAssets/Pressure Pump 3.aseprite" id="43_ds8mp"]
+[ext_resource type="Texture2D" uid="uid://d4f0j64k3g3so" path="res://AsepriteAssets/Pressure Pump 4.aseprite" id="44_pbwgg"]
+[ext_resource type="Texture2D" uid="uid://walc2r7qeoyh" path="res://AsepriteAssets/Pressure Pump 5.aseprite" id="45_ndmee"]
+[ext_resource type="Texture2D" uid="uid://bj8b6m0qdh1x2" path="res://AsepriteAssets/Pressure Pump 6.aseprite" id="46_lua15"]
+[ext_resource type="Texture2D" uid="uid://j4by6cgon13e" path="res://AsepriteAssets/Pressure Pump 7.aseprite" id="47_qirsl"]
+[ext_resource type="Texture2D" uid="uid://bxjkfelgipmmg" path="res://AsepriteAssets/Pressure Pump 8.aseprite" id="48_pnh27"]
+[ext_resource type="Texture2D" uid="uid://dephqj3vvybh8" path="res://AsepriteAssets/Pressure Pump 9.aseprite" id="49_yw735"]
+[ext_resource type="Texture2D" uid="uid://by76dkoc4ljxj" path="res://AsepriteAssets/Energy Bar 27%.aseprite" id="50_xc54d"]
+[ext_resource type="Texture2D" uid="uid://bvrft1brvx1ad" path="res://AsepriteAssets/TV Fuel Rods Middle.aseprite" id="55_ndmee"]
+[ext_resource type="Texture2D" uid="uid://no6gjgng51qp" path="res://AsepriteAssets/TV Fuel Rods Out.aseprite" id="56_lua15"]
+
+[node name="Main" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+script = ExtResource("1_kek77")
+
+[node name="Pressure" type="Node2D" parent="Camera2D"]
+position = Vector2(358, -174)
+
+[node name="Sprite2D" type="Sprite2D" parent="Camera2D/Pressure"]
+z_index = 1
+position = Vector2(13, 22)
+scale = Vector2(7.5, 7.5)
+texture = ExtResource("2_dyvha")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Camera2D/Pressure"]
+z_index = 1
+position = Vector2(73, -128)
+scale = Vector2(1.875, 1.875)
+texture = ExtResource("3_xc54d")
+
+[node name="Sprite2D3" type="Sprite2D" parent="Camera2D/Pressure"]
+z_index = 1
+position = Vector2(73, -138)
+scale = Vector2(1.875, 1.875)
+texture = ExtResource("4_w250u")
+
+[node name="CoolantJug" type="Sprite2D" parent="Camera2D/Pressure"]
+z_index = 1
+position = Vector2(-868, 224)
+rotation = -0.349066
+scale = Vector2(3, 3)
+texture = ExtResource("5_dyvha")
+
+[node name="Clock" type="Node2D" parent="Camera2D"]
+position = Vector2(-432, -173)
+
+[node name="ClockNoHands" type="Sprite2D" parent="Camera2D/Clock"]
+z_index = 1
+scale = Vector2(3, 3)
+texture = ExtResource("6_pbwgg")
+
+[node name="ClockHand" type="Sprite2D" parent="Camera2D/Clock"]
+z_index = 1
+scale = Vector2(3, 3)
+texture = ExtResource("7_ndmee")
+
+[node name="CabinetDeskThing" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(160.074, 120)
+scale = Vector2(5, 5)
+texture = ExtResource("1_ig7tw")
+
+[node name="CabinetDeskThing5" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(846, 370)
+rotation = 0.698132
+scale = Vector2(5, 5)
+texture = ExtResource("1_ig7tw")
+
+[node name="CabinetDeskThing2" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(-159.926, 120)
+scale = Vector2(5, 5)
+texture = ExtResource("1_ig7tw")
+
+[node name="LeverUp" type="Sprite2D" parent="."]
+position = Vector2(-228.926, 55.0001)
+scale = Vector2(5, 5)
+texture = ExtResource("2_1bvp3")
+
+[node name="LeverMiddle" type="Sprite2D" parent="."]
+position = Vector2(-144.926, 58.0001)
+scale = Vector2(5, 5)
+texture = ExtResource("3_lquwl")
+
+[node name="LeverDown" type="Sprite2D" parent="."]
+position = Vector2(-76.9259, 54.0001)
+scale = Vector2(5, 5)
+texture = ExtResource("4_7mycd")
+
+[node name="Wallpaper" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(61, -438)
+scale = Vector2(51.0625, 22.2969)
+texture = ExtResource("5_272bh")
+
+[node name="CabinetDeskThing3" type="Sprite2D" parent="."]
+position = Vector2(525.074, 185)
+rotation = 0.349066
+scale = Vector2(5, 5)
+texture = ExtResource("1_ig7tw")
+
+[node name="CabinetDeskThing4" type="Sprite2D" parent="."]
+position = Vector2(-524.926, 185)
+rotation = -0.349066
+scale = Vector2(5, 5)
+texture = ExtResource("1_ig7tw")
+
+[node name="CabinetDeskThing6" type="Sprite2D" parent="."]
+position = Vector2(-846, 370)
+rotation = -0.698132
+scale = Vector2(5, 5)
+texture = ExtResource("1_ig7tw")
+
+[node name="CabinetCorner" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(348.006, 121.564)
+rotation = 0.174533
+scale = Vector2(6.16793, 4.81331)
+texture = ExtResource("6_5vw27")
+
+[node name="CabinetCorner3" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(701, 251)
+rotation = 0.523599
+scale = Vector2(6.16793, 4.81331)
+texture = ExtResource("6_5vw27")
+
+[node name="CabinetCorner2" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(-347.7, 122.281)
+rotation = -0.174533
+scale = Vector2(6.16793, 4.83542)
+texture = ExtResource("6_5vw27")
+
+[node name="CabinetCorner4" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(-701, 251)
+rotation = -0.523599
+scale = Vector2(6.16793, 4.83542)
+texture = ExtResource("6_5vw27")
+
+[node name="Floor" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(72.5001, 747)
+scale = Vector2(51.0781, 16.25)
+texture = ExtResource("7_kek77")
+
+[node name="Fuel Rod TV" type="Sprite2D" parent="."]
+position = Vector2(-159.926, -170)
+scale = Vector2(6, 6)
+texture = ExtResource("9_5he1h")
+script = ExtResource("16_ds8mp")
+
+[node name="Fuel Temp TV" type="Sprite2D" parent="."]
+position = Vector2(160.074, -170)
+scale = Vector2(6, 6)
+texture = ExtResource("10_xwkxq")
+
+[node name="PlayButtonUnclicked" type="Sprite2D" parent="."]
+position = Vector2(2130, 93)
+scale = Vector2(5, 5)
+texture = ExtResource("10_efxa6")
+
+[node name="PlayButtonClicked" type="Sprite2D" parent="."]
+position = Vector2(2213, 9.99997)
+scale = Vector2(5, 5)
+texture = ExtResource("11_dg77c")
+
+[node name="TextureButton" type="TextureButton" parent="."]
+offset_left = 2281.0
+offset_top = 544.0
+offset_right = 2343.0
+offset_bottom = 611.0
+scale = Vector2(2.00022, 2.00112)
+texture_normal = ExtResource("12_lvtmh")
+texture_pressed = ExtResource("13_yyih5")
+ignore_texture_size = true
+
+[node name="TextureButton2" type="TextureButton" parent="."]
+offset_left = 45.0
+offset_top = -66.0
+offset_right = 107.0
+offset_bottom = 1.0
+scale = Vector2(3.12022, 3.12112)
+texture_normal = ExtResource("14_qjyg3")
+texture_pressed = ExtResource("15_elkpi")
+ignore_texture_size = true
+script = ExtResource("23_nyc7o")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="TextureButton2"]
+
+[node name="Thermometer1k" type="Sprite2D" parent="."]
+position = Vector2(2107, 399)
+texture = ExtResource("18_wdm1y")
+
+[node name="Thermometer1_1kRevised" type="Sprite2D" parent="."]
+position = Vector2(2125, 399)
+texture = ExtResource("19_hxy8k")
+
+[node name="Thermometer1_2k" type="Sprite2D" parent="."]
+position = Vector2(2142, 399)
+texture = ExtResource("20_2t1a5")
+
+[node name="Thermometer1_3k" type="Sprite2D" parent="."]
+position = Vector2(2160, 399)
+texture = ExtResource("21_8576b")
+
+[node name="Thermometer1_4k" type="Sprite2D" parent="."]
+position = Vector2(2178, 399)
+texture = ExtResource("22_68r7h")
+
+[node name="Thermometer1_5k" type="Sprite2D" parent="."]
+position = Vector2(2195, 399)
+texture = ExtResource("23_7vltt")
+
+[node name="Thermometer1_6k" type="Sprite2D" parent="."]
+position = Vector2(2212, 399)
+texture = ExtResource("24_fj2yu")
+
+[node name="Thermometer1_7k" type="Sprite2D" parent="."]
+position = Vector2(2230, 399)
+texture = ExtResource("25_iueff")
+
+[node name="Thermometer1_8k" type="Sprite2D" parent="."]
+position = Vector2(2247, 399)
+texture = ExtResource("26_n7324")
+
+[node name="Thermometer1_9k" type="Sprite2D" parent="."]
+position = Vector2(2264, 399)
+texture = ExtResource("27_o6tbt")
+
+[node name="Thermometer2k" type="Sprite2D" parent="."]
+position = Vector2(2282, 399)
+texture = ExtResource("28_v5dxo")
+
+[node name="Thermometer2_1k" type="Sprite2D" parent="."]
+position = Vector2(2301, 399)
+texture = ExtResource("29_dyvha")
+
+[node name="Thermometer2_2k" type="Sprite2D" parent="."]
+position = Vector2(2318, 399)
+texture = ExtResource("30_xc54d")
+
+[node name="Thermometer2_3k" type="Sprite2D" parent="."]
+position = Vector2(2336, 398)
+texture = ExtResource("31_w250u")
+
+[node name="Thermometer2_4k" type="Sprite2D" parent="."]
+position = Vector2(2358, 404)
+texture = ExtResource("32_3h3yf")
+
+[node name="Thermometer2_5kWarning" type="Sprite2D" parent="."]
+position = Vector2(2377, 375)
+texture = ExtResource("33_nyc7o")
+
+[node name="Thermometer2_6kWarning" type="Sprite2D" parent="."]
+position = Vector2(2401, 398)
+texture = ExtResource("34_ds8mp")
+
+[node name="Thermometer2_7kWarning" type="Sprite2D" parent="."]
+position = Vector2(2429, 399)
+texture = ExtResource("35_pbwgg")
+
+[node name="Thermometer2_8k" type="Sprite2D" parent="."]
+position = Vector2(2463, 400)
+texture = ExtResource("36_ndmee")
+
+[node name="Thermometer2_6k" type="Sprite2D" parent="."]
+position = Vector2(156, -151)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("37_xwkxq")
+
+[node name="PressurePump0" type="Sprite2D" parent="."]
+position = Vector2(1930, 626)
+texture = ExtResource("2_dyvha")
+
+[node name="PressurePump1" type="Sprite2D" parent="."]
+position = Vector2(1930, 626)
+texture = ExtResource("41_3h3yf")
+
+[node name="PressurePump2" type="Sprite2D" parent="."]
+position = Vector2(1930, 626)
+texture = ExtResource("42_nyc7o")
+
+[node name="PressurePump3" type="Sprite2D" parent="."]
+position = Vector2(1930, 626)
+texture = ExtResource("43_ds8mp")
+
+[node name="PressurePump4" type="Sprite2D" parent="."]
+position = Vector2(1930, 626)
+texture = ExtResource("44_pbwgg")
+
+[node name="PressurePump5" type="Sprite2D" parent="."]
+position = Vector2(1930, 626)
+texture = ExtResource("45_ndmee")
+
+[node name="PressurePump6" type="Sprite2D" parent="."]
+position = Vector2(1930, 626)
+texture = ExtResource("46_lua15")
+
+[node name="PressurePump7" type="Sprite2D" parent="."]
+position = Vector2(1930, 626)
+texture = ExtResource("47_qirsl")
+
+[node name="PressurePump8" type="Sprite2D" parent="."]
+position = Vector2(1930, 626)
+texture = ExtResource("48_pnh27")
+
+[node name="PressurePump9" type="Sprite2D" parent="."]
+position = Vector2(2006, 625)
+texture = ExtResource("49_yw735")
+
+[node name="PressureGuage" type="Sprite2D" parent="."]
+position = Vector2(1938, 606)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("3_xc54d")
+
+[node name="EnergyBar" type="Sprite2D" parent="."]
+position = Vector2(8, -310)
+scale = Vector2(3, 3)
+texture = ExtResource("50_xc54d")
+
+[node name="TvFuelRodsIn" type="Sprite2D" parent="."]
+position = Vector2(2663, -158)
+texture = ExtResource("9_5he1h")
+
+[node name="TvFuelRodsMiddle" type="Sprite2D" parent="."]
+position = Vector2(2751, -185)
+texture = ExtResource("55_ndmee")
+
+[node name="TvFuelRodsOut" type="Sprite2D" parent="."]
+position = Vector2(2765, -131)
+texture = ExtResource("56_lua15")
+
+[connection signal="pressed" from="TextureButton2" to="TextureButton2" method="FRPChange"]

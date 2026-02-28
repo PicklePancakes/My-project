@@ -1,0 +1,145 @@
+[gd_scene load_steps=10 format=3 uid="uid://ddgycdotko4rs"]
+
+[ext_resource type="Script" uid="uid://dapkcxdhrhq2q" path="res://MainMenuManager.cs" id="1_fu7sn"]
+[ext_resource type="Script" uid="uid://dsiq5ifl3ip06" path="res://MenuTab.cs" id="2_jix8l"]
+[ext_resource type="Script" uid="uid://cbufyqlgrnq8p" path="res://MenuSwapperButton.cs" id="3_glbon"]
+[ext_resource type="Script" uid="uid://c1b4f8dm2ox0g" path="res://LoadSceneButton.cs" id="3_jix8l"]
+[ext_resource type="Texture2D" uid="uid://cqueagoe30ego" path="res://AsepriteAssets/Silver Button Unclicked.aseprite" id="6_nlkkf"]
+[ext_resource type="Texture2D" uid="uid://dd5ylllf1vn82" path="res://AsepriteAssets/Silver Button Clicked.aseprite" id="8_dy7ct"]
+[ext_resource type="Texture2D" uid="uid://6dkbnlblqi1c" path="res://AsepriteAssets/Silver Button  Hover.aseprite" id="9_0o4t1"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8qtwp"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qe12f"]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_fu7sn")
+
+[node name="MenuTab" type="PanelContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -32.0
+offset_top = -66.0
+offset_right = 32.0
+offset_bottom = 66.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_8qtwp")
+script = ExtResource("2_jix8l")
+
+[node name="Panel" type="Panel" parent="MenuTab"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_qe12f")
+
+[node name="Start Game" type="TextureButton" parent="MenuTab/Panel"]
+layout_mode = 0
+offset_left = -29.0
+offset_top = -137.0
+offset_right = 5.0
+offset_bottom = -117.0
+scale = Vector2(3.90215, 3.89699)
+texture_normal = ExtResource("6_nlkkf")
+texture_pressed = ExtResource("8_dy7ct")
+texture_hover = ExtResource("9_0o4t1")
+ignore_texture_size = true
+stretch_mode = 3
+script = ExtResource("3_jix8l")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="MenuTab/Panel/Start Game"]
+layout_mode = 0
+offset_left = 3.07524
+offset_top = 6.1586
+offset_right = 99.0752
+offset_bottom = 35.1586
+scale = Vector2(0.31238, 0.28633)
+text = "Start Game"
+
+[node name="Options" type="TextureButton" parent="MenuTab/Panel" node_paths=PackedStringArray("SwitchToMenu")]
+layout_mode = 0
+offset_left = -24.0
+offset_top = 15.0
+offset_right = 10.0
+offset_bottom = 35.0
+scale = Vector2(3.90215, 3.89699)
+texture_normal = ExtResource("6_nlkkf")
+texture_pressed = ExtResource("8_dy7ct")
+texture_hover = ExtResource("9_0o4t1")
+ignore_texture_size = true
+stretch_mode = 3
+script = ExtResource("3_glbon")
+SwitchToMenu = NodePath("../../../MenuTab2")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="MenuTab/Panel/Options"]
+layout_mode = 0
+offset_left = 1.15384
+offset_top = 3.46154
+offset_right = 67.1538
+offset_bottom = 32.4615
+scale = Vector2(0.509201, 0.475077)
+text = "Options"
+
+[node name="Quit" type="TextureButton" parent="MenuTab/Panel"]
+layout_mode = 0
+offset_left = -24.0
+offset_top = 165.0
+offset_right = 10.0
+offset_bottom = 185.0
+scale = Vector2(3.91556, 3.9098)
+texture_normal = ExtResource("6_nlkkf")
+texture_pressed = ExtResource("8_dy7ct")
+texture_hover = ExtResource("9_0o4t1")
+ignore_texture_size = true
+stretch_mode = 3
+
+[node name="RichTextLabel" type="RichTextLabel" parent="MenuTab/Panel/Quit"]
+layout_mode = 0
+offset_left = 4.6064
+offset_top = 0.768951
+offset_right = 48.6064
+offset_bottom = 38.769
+scale = Vector2(0.672438, 0.670767)
+text = "Quit"
+
+[node name="MenuTab2" type="PanelContainer" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("2_jix8l")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MenuTab2"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MenuTab2/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 75
+text = "Second Menu"
+
+[node name="Return Button" type="Button" parent="MenuTab2/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 75
+text = "Return"
+
+[connection signal="pressed" from="MenuTab/Panel/Quit" to="." method="OnQuitGameBtnPressed"]
+[connection signal="pressed" from="MenuTab2/VBoxContainer/Return Button" to="MenuTab2" method="OnMenuReturnButtonPressed"]
