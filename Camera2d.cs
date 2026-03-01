@@ -11,13 +11,17 @@ public partial class Camera2d : Camera2D
 	public override void _Ready()
 	{
 		_centerViewport = GetViewportRect().Size / 2.0f;
+		//GameMain Main = GetNode<GameMain>("Main");
 	}
 	public override void _Process(double delta)
 	{
-		Vector2 mousePosition = GetViewport().GetMousePosition();  
-		float offsetX = ((mousePosition.X / _centerViewport.X) - 1.0f) * MaxOffset;
-		float offsetY = ((mousePosition.Y / _centerViewport.Y) - 1.0f) * MaxOffset;
-		Vector2 targetOffset = new Vector2(offsetX, offsetY);
-		Offset = Offset.Lerp(targetOffset, FollowSpeed * (float)delta);
+		//if (Node2D.GameMain.interacting = false) 
+		{
+			Vector2 mousePosition = GetViewport().GetMousePosition();  
+			float offsetX = ((mousePosition.X / _centerViewport.X) - 1.0f) * MaxOffset;
+			float offsetY = ((mousePosition.Y / _centerViewport.Y) - 1.0f) * MaxOffset;
+			Vector2 targetOffset = new Vector2(offsetX, offsetY);
+			Offset = Offset.Lerp(targetOffset, FollowSpeed * (float)delta);
+		}
 	}
 }

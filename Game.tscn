@@ -1,7 +1,8 @@
-[gd_scene load_steps=57 format=3 uid="uid://btpwvjt5o676g"]
+[gd_scene load_steps=58 format=3 uid="uid://btpwvjt5o676g"]
 
 [ext_resource type="Texture2D" uid="uid://dpdx1v1xj1r7" path="res://AsepriteAssets/Cabinet desk thing.aseprite" id="1_ig7tw"]
 [ext_resource type="Script" uid="uid://ba0ed7sk07p1m" path="res://Camera2d.cs" id="1_kek77"]
+[ext_resource type="Script" uid="uid://dmhqqad0h3022" path="res://GameMain.cs" id="1_lua15"]
 [ext_resource type="Texture2D" uid="uid://cuuagsb5qfn58" path="res://AsepriteAssets/Lever Up.aseprite" id="2_1bvp3"]
 [ext_resource type="Texture2D" uid="uid://r0a0cquiymos" path="res://AsepriteAssets/Pressure Pump 0.aseprite" id="2_dyvha"]
 [ext_resource type="Texture2D" uid="uid://bbyr27wgtbd66" path="res://AsepriteAssets/Lever Middle.aseprite" id="3_lquwl"]
@@ -58,6 +59,7 @@
 [ext_resource type="Texture2D" uid="uid://no6gjgng51qp" path="res://AsepriteAssets/TV Fuel Rods Out.aseprite" id="56_lua15"]
 
 [node name="Main" type="Node2D"]
+script = ExtResource("1_lua15")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 script = ExtResource("1_kek77")
